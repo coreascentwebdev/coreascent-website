@@ -448,33 +448,40 @@
             margin-bottom: 2.5rem;
         }
 
-        .contact-email {
+        .contact-methods {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
             display: inline-flex;
             align-items: center;
             gap: 0.75rem;
             background: rgba(255, 255, 255, 0.1);
-            padding: 1.25rem 2.5rem;
+            padding: 1.25rem 2rem;
             border-radius: 8px;
             border: 1px solid rgba(255, 255, 255, 0.15);
             transition: all 0.3s ease;
         }
 
-        .contact-email:hover {
+        .contact-item:hover {
             background: rgba(255, 255, 255, 0.15);
             border-color: rgba(255, 255, 255, 0.25);
         }
 
-        .contact-email svg {
+        .contact-item svg {
             width: 24px;
             height: 24px;
             stroke: var(--gold);
             fill: none;
         }
 
-        .contact-email a {
+        .contact-item a {
             color: var(--white);
             text-decoration: none;
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             font-weight: 500;
         }
 
@@ -710,12 +717,20 @@
         <div class="contact-inner">
             <h2>Let's Connect</h2>
             <p>Ready to explore how Core Ascent can support your business? Reach out to start the conversation.</p>
-            <div class="contact-email">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="2" y="4" width="20" height="16" rx="2"/>
-                    <path d="M22 6l-10 7L2 6"/>
-                </svg>
-                <a href="mailto:info@coreascent.net">info@coreascent.net</a>
+            <div class="contact-methods">
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <a href="tel:+18557142673">(855) 714-CORE</a>
+                </div>
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="M22 6l-10 7L2 6"/>
+                    </svg>
+                    <a href="mailto:info@coreascent.net">info@coreascent.net</a>
+                </div>
             </div>
         </div>
     </section>
